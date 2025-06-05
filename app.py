@@ -116,7 +116,6 @@ if gemini_key and st.button("Submit"):
                 response = model.generate_content(contents=context_parts)
                 st.subheader("🧠 Answer:")
                 st.write(response.text)
-                st.write(retrieved_chunks)
             except Exception as e:
                 st.error(f"Error generating response: {e}")
 else:
